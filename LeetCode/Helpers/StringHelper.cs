@@ -10,14 +10,11 @@ namespace LeetCode.Helpers
             StringBuilder sb = new StringBuilder();
 
             foreach(int i in array)
-            {
                 sb.Append($"{i} ");
-            }
 
             string returnee = sb.ToString();
-            returnee.Trim();
 
-            return returnee;
+            return returnee.Trim();
         }
 
         public static string ReverseString(string input)

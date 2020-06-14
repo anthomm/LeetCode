@@ -16,13 +16,13 @@ namespace LeetCode.NumberPalindrome
 {
     static class NumberPalindromeNaive
     {
-        public static void Run()
+        public static void Run(int input = -678909876)
         {
             Console.WriteLine("Starting Naive NumberPalindrome");
-            int input = -678909876;
 
             Console.WriteLine($"Input: {input}");
             Console.WriteLine($"Result: {IsPalindrome(input)}");
+
             Console.WriteLine("Ending");
         }
 

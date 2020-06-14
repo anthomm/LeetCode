@@ -1,8 +1,5 @@
 ﻿using LeetCode.Helpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 /*
  * Given a 32-bit signed integer, reverse digits of an integer.
@@ -31,11 +28,10 @@ namespace LeetCode.ReverseInteger
          */
         public static void Run(int input = -120)
         {
-            Console.WriteLine("Starting Reverse Integer");
-            int result = ReverseInteger(input);
+            Console.WriteLine("Starting Naive ReverseInteger");
 
             Console.WriteLine($"Input: {input}");
-            Console.WriteLine($"Result: {result}");
+            Console.WriteLine($"Result: {ReverseInteger(input)}");
 
             Console.WriteLine("Ending");
         }
@@ -49,7 +45,6 @@ namespace LeetCode.ReverseInteger
             
             string inputString = Math.Abs(input).ToString();
             string reversedString = StringHelper.ReverseString(inputString);
-
 
             if (Int32.TryParse(reversedString, out int buffer))
             {
