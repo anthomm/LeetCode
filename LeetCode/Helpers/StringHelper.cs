@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 
 namespace LeetCode.Helpers
 {
@@ -17,6 +18,13 @@ namespace LeetCode.Helpers
             returnee.Trim();
 
             return returnee;
+        }
+
+        public static string ReverseString(string input)
+        {
+            char[] cArray = input.ToCharArray();
+            Array.Reverse(cArray);
+            return new string(cArray);
         }
     }
 }
