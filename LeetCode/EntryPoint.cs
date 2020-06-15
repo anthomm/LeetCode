@@ -1,5 +1,6 @@
 ﻿using LeetCode.Easy.LongestCommonPrefix;
 using LeetCode.Easy.RomanToInteger;
+using LeetCode.Easy.ValidParantheses;
 using LeetCode.Helpers;
 using LeetCode.NumberPalindrome;
 using LeetCode.ReverseInteger;
@@ -15,7 +16,13 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            LongestCommonPrefixNaive.Run();
+            ValidParenthesesNaive.Run("()");
+            Console.WriteLine();
+            ValidParenthesesNaive.Run("()[]{}");
+            Console.WriteLine();
+            ValidParenthesesNaive.Run("(]");
+            Console.WriteLine();
+            ValidParenthesesNaive.Run("{([)]}");
         }
     }
 }

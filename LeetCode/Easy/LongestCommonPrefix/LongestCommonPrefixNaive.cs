@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 /*
  * Write a function to find the longest common prefix string amongst an array of strings.
@@ -19,6 +17,8 @@ namespace LeetCode.Easy.LongestCommonPrefix
             Console.WriteLine("Starting Naive LongestCommonPrefix");
 
             string[] input = new string[] { "phytoflagellate", "conflagration", "flibbertigibbet", "stagflationary" };
+            //string[] input = new string[] { "perplexed", "megapixel", "xenograft", "exemplary" };
+            //string[] input = new string[] { "hydrocracking", "packinghouse", "tackiness", "mackinaw" };
             string result = LongestCommonPrefix(input);
 
             Console.Write("Input: ");
