@@ -27,9 +27,6 @@ namespace LeetCode.Easy.ValidParantheses
             if (activeStack.Count % 2 != 0)
                 return false;
 
-            if (activeStack.Count == 2)
-                return IsMatch(activeStack.Pop(), activeStack.Pop());
-
             char current = activeStack.Pop();
             char next;
 
