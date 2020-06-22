@@ -4,9 +4,9 @@ using System.Runtime.CompilerServices;
 
 namespace LeetCode.Easy.ValidParantheses
 {
-    static class ValidParenthesesNaive
+    public static class ValidParenthesesNaive
     {
-        public static void Run(string input = "{()}")
+        public static bool Run(string input = "{()}")
         {
             Console.WriteLine("Starting Naive ValidParantheses");
 
@@ -15,6 +15,8 @@ namespace LeetCode.Easy.ValidParantheses
             bool result = IsValid(input);
 
             Console.WriteLine($"Result: {result}");
+
+            return result;
         }
 
         public static bool IsValid(string input)
@@ -45,7 +47,7 @@ namespace LeetCode.Easy.ValidParantheses
                     current = next;
                 }
             }
-            return memoryStack.Count == 0;
+            return memoryStack.Count == 0 && activeStack.Count == 0;
         }
 
         private static bool IsMatch(char right, char left)

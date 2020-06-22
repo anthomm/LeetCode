@@ -16,33 +16,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("T");
-            ValidParenthesesNaive.Run("()"); // T
-            Console.WriteLine();
 
-            Console.WriteLine("T");
-            ValidParenthesesNaive.Run("()()"); // T
-            Console.WriteLine();
-
-            Console.WriteLine("T");
-            ValidParenthesesNaive.Run("[]{}()"); // T
-            Console.WriteLine();
-
-            Console.WriteLine("T");
-            ValidParenthesesNaive.Run("([{}])"); // T
-            Console.WriteLine();
-
-            Console.WriteLine("F");
-            ValidParenthesesNaive.Run("([)]"); // F
-            Console.WriteLine();
-
-            Console.WriteLine("F");
-            ValidParenthesesNaive.Run("({[])}"); // F
-            Console.WriteLine();
-
-            Console.WriteLine("F");
-            ValidParenthesesNaive.Run("((())"); // F
-            Console.WriteLine();
         }
     }
 }
